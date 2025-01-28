@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Sameer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Happy Birthday, Chintu!</h1>
+      <h2>Wishing you a day filled with love, laughter, and joy!</h2>
+      
+      <button class="btn" onclick="showMessageAndOpenSnapchat()">Click to Reveal Surprise</button>
+      
+      <p
+        id="message"
+        style="margin-top: 20px; font-size: 1.2em; display: none"
+      >
+        You're an amazing friend, and I'm so lucky to have you in my life!
+      </p>
+    </div>
+
+    <div class="balloons">
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+    </div>
+
+    <script>
+      function showMessageAndOpenSnapchat() {
+        document.getElementById("message").style.display = "block";
+        window.open('snapchat.html', '_get', 'width=100vw','height=100vh');
+      }
+    </script>
+  </body>
+</html>
