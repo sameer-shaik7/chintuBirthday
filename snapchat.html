@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapshot Reels</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            
+            justify-content: center;
+        }
+        .reel {
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .reel video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .reel-info {
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <h1>Birthday Snapshot Reels</h1>
+    <div class="container">
+        <div class="reel">
+            <video src="clips/clip1.mp4" poster="https://example.com/poster1.jpg" preload="metadata" controls></video>
+            <div class="reel-info">
+                <h3>Birthday Party</h3>
+                <p>Highlights from Sameera's surprise party!</p>
+            </div>
+        </div>
+        <div class="reel">
+            <video src="clips/funnyclip.mp4" poster="https://example.com/poster2.jpg" preload="metadata" controls></video>
+            <div class="reel-info">
+                <h3>Cake Cutting</h3>
+                <p>The moment Sameera blew out the candles!</p>
+            </div>
+        </div>
+        <div class="reel">
+            <video src="clips/funnyclip2.mp4" poster="https://example.com/poster3.jpg" preload="metadata" controls></video>
+            <div class="reel-info">
+                <h3>Friends' Wishes</h3>
+                <p>Heartfelt messages from Sameera's friends.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
